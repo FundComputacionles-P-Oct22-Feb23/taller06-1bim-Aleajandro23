@@ -28,4 +28,4 @@
 14.     contador <-- contador + 1
 15.  Fin Mientras
 16.  Escribir cadenaFinal
-17.  Inicio
+17.  Fin

@@ -1,0 +1,23 @@
+/* Realizar una miniespecificación que permita presentar
+   en pantalla la siguiente secuencia: 
+	5/10
+	10/12
+	15/14
+	20/16
+	25/18
+	30/20
+*/
+
+1. Inicio
+2. contador, i[0-n] <-- 5
+3. contador_dos, i[0-n] <-- 10
+
+4. Mientras contador <= 30 entonces
+5.	Si (contador MOD 5) == 0 entonces
+6.	  Escribe contador + "/contador_dos\n"	
+7.	FinSi 
+8.	   contador <-- contador + 5
+9.	   contador_dos <-- contador_dos +2
+10. Fin Mientras
+
+11. Fin 	

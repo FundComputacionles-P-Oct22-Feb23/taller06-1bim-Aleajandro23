@@ -1,0 +1,34 @@
+Generar una miniespecificación que permita ingresar 4 estudiantes;
+por cada uno de ellos ingresar el nombre del estudiante,
+el promedio de ciclo. Presentar el siguiente reporte
+
+Estudiante 1	10	Aprobado
+Estudiante 2	6.9	Reprobado
+Estudiante 3	7	Aprobado
+Estudiante 4	5	Reprobado
+Atención; con base al valor del promedio, usted debe asignar en cada 
+registro el tipo Aprobado o Reprobado.
+
+1. Inicio
+2. nombre, x(10)[{a-z}, {A-Z}, {BS}]
+3. promedio, i[0-n]
+4. aprobacion, x(10)[{a-z}, {A-Z}]
+5. mensaje, x(300)[{a-z}, {A-Z}, {BS}] <-- ""
+6. contador <-- 1
+
+7. Mientras contador <= 4 entonces
+8.  << "Ingrese el nombre del estudiante:"
+9.  >> nombre
+10. << "Ingrese el promedio del estudiante:"
+11. >> promedio
+
+12. 	Si promedio >= 7 entonces 
+13.   		aprobacion <-- "Aprobado"
+14. 	De lo contrario
+15.   		aprobacion <-- "Reprobado"
+16. 	FinSi
+17. 		mensaje <-- mensaje + nombre + "\t" + contador + "\t" + promedio + "\t" + aprobacion + "\n"
+18. 		contador <-- contador + 1
+19. FinMientras 
+20. 	<< mensaje
+21. Fin 
